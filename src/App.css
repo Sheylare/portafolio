@@ -1,0 +1,23 @@
+#root {
+  background-color: rgb(0, 0, 0);
+  color: rgb(229, 229, 203);
+}
+
+
+.hero-section h1 {
+  font-size: 45px;
+  margin: 0 ;
+}
+.hero-text {
+  font-size: 15px;
+  width: 200px;
+  border: 2px solid black;
+  padding: 0 20px;
+  word-wrap: break-word;
+}
+
+
+
+
+
+
