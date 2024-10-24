@@ -129,16 +129,16 @@ function Contact() {
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "white", // Borde blanco
+                  borderColor: "white", 
                 },
                 "&:hover fieldset": {
-                  borderColor: "white", // Borde blanco al pasar el mouse
+                  borderColor: "white", 
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "white", // Borde blanco al hacer clic
+                  borderColor: "white", 
                 },
               },
-              backgroundColor: "black", // Fondo negro
+              backgroundColor: "black", 
             }}
           />
         </Box>
@@ -163,28 +163,21 @@ function Contact() {
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "white", // Borde blanco
+                  borderColor: "white", 
                 },
                 "&:hover fieldset": {
-                  borderColor: "white", // Borde blanco al pasar el mouse
+                  borderColor: "white", 
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "white", // Borde blanco al hacer clic
+                  borderColor: "white", 
                 },
               },
-              backgroundColor: "black", // Fondo negro
+              backgroundColor: "black", 
             }}
           />
         </Box>
         <StyledButton
           type="submit"
-          // sx={{
-          //   backgroundColor: "white",
-          //   color: "black",
-          //   "&:hover": {
-          //     backgroundColor: "gray", // Cambia el color al pasar el mouse
-          //   },
-          // }}
         >
           Send
         </StyledButton>
