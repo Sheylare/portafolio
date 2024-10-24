@@ -56,22 +56,22 @@ function Contact() {
             required
             slotProps={{
               inputLabel: {
-                style: { color: "white" },
+                style: { color: "#E5E5CB" },
               },
               input: {
-                style: { color: "white", borderColor: "white" },
+                style: { color: "#E5E5CB", borderColor: "#E5E5CB"},
               },
             }}
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "white", // Borde blanco
+                  borderColor: "#E5E5CB"// Borde blanco
                 },
                 "&:hover fieldset": {
-                  borderColor: "white", // Borde blanco al pasar el mouse
+                  borderColor: "#E5E5CB", // Borde blanco al pasar el mouse
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "white", // Borde blanco al hacer clic
+                  borderColor: "#E5E5CB", // Borde blanco al hacer clic
                 },
               },
               backgroundColor: "black", // Fondo negro
@@ -88,22 +88,22 @@ function Contact() {
             required
             slotProps={{
               inputLabel: {
-                style: { color: "white" },
+                style: { color: "#E5E5CB" },
               },
               input: {
-                style: { color: "white", borderColor: "white" },
+                style: { color: "#E5E5CB", borderColor: "#E5E5CB" },
               },
             }}
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "white", // Borde blanco
+                  borderColor: "#E5E5CB", // Borde blanco
                 },
                 "&:hover fieldset": {
-                  borderColor: "white", // Borde blanco al pasar el mouse
+                  borderColor: "#E5E5CB", // Borde blanco al pasar el mouse
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "white", // Borde blanco al hacer clic
+                  borderColor: "#E5E5CB", // Borde blanco al hacer clic
                 },
               },
               backgroundColor: "black", // Fondo negro
@@ -120,22 +120,22 @@ function Contact() {
             required
             slotProps={{
               inputLabel: {
-                style: { color: "white" },
+                style: { color: "#E5E5CB" },
               },
               input: {
-                style: { color: "white", borderColor: "white" },
+                style: { color: "#E5E5CB", borderColor: "#E5E5CB" },
               },
             }}
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "white", 
+                  borderColor: "#E5E5CB", 
                 },
                 "&:hover fieldset": {
-                  borderColor: "white", 
+                  borderColor: "#E5E5CB", 
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "white", 
+                  borderColor: "#E5E5CB", 
                 },
               },
               backgroundColor: "black", 
@@ -154,22 +154,22 @@ function Contact() {
             required
             slotProps={{
               inputLabel: {
-                style: { color: "white" },
+                style: { color: "#E5E5CB" },
               },
               input: {
-                style: { color: "white", borderColor: "white" },
+                style: { color: "#E5E5CB", borderColor: "#E5E5CB" },
               },
             }}
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "white", 
+                  borderColor: "#E5E5CB", 
                 },
                 "&:hover fieldset": {
-                  borderColor: "white", 
+                  borderColor: "#E5E5CB", 
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "white", 
+                  borderColor: "#E5E5CB", 
                 },
               },
               backgroundColor: "black", 

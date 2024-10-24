@@ -25,7 +25,7 @@ function Projects() {
         ml: "5%",
         mr: "3%",
         alignItems: "stretch",
-        rowGap: { xs: "130px" },
+        rowGap: { xs: "190px" },
       }}
     >
       <Grid2 xs={12} md={4}>

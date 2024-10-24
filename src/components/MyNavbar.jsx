@@ -57,47 +57,48 @@ function MyNavbar() {
       </Toolbar>
 
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
-        <div
-          role="presentation"
-          onClick={toggleDrawer(false)}
-          onKeyDown={toggleDrawer(false)}
-        >
-          <List>
-            <ListItem
-              button
-              onClick={toggleDrawer(false)}
-              component={Link}
-              to="/"
-            >
-              <ListItemText primary="Home" />
-            </ListItem>
-            <ListItem
-              button
-              onClick={toggleDrawer(false)}
-              component={Link}
-              to="/about"
-            >
-              <ListItemText primary="About" />
-            </ListItem>
-            <ListItem
-              button
-              onClick={toggleDrawer(false)}
-              component={Link}
-              to="/projects"
-            >
-              <ListItemText primary="Projects" />
-            </ListItem>
-            <ListItem
-              button
-              onClick={toggleDrawer(false)}
-              component={Link}
-              to="/contact"
-            >
-              <ListItemText primary="Contact" />
-            </ListItem>
-          </List>
-        </div>
-      </Drawer>
+  <div
+    role="presentation"
+    onClick={toggleDrawer(false)}
+    onKeyDown={toggleDrawer(false)}
+  >
+    <List>
+      <ListItem
+        button
+        onClick={toggleDrawer(false)}
+        component={Link}
+        to="/"
+      >
+        <ListItemText primary="Home" sx={{ color: 'black' }} />
+      </ListItem>
+      <ListItem
+        button
+        onClick={toggleDrawer(false)}
+        component={Link}
+        to="/about"
+      >
+        <ListItemText primary="About" sx={{ color: 'black' }} />
+      </ListItem>
+      <ListItem
+        button
+        onClick={toggleDrawer(false)}
+        component={Link}
+        to="/projects"
+      >
+        <ListItemText primary="Projects" sx={{ color: 'black' }} />
+      </ListItem>
+      <ListItem
+        button
+        onClick={toggleDrawer(false)}
+        component={Link}
+        to="/contact"
+      >
+        <ListItemText primary="Contact" sx={{ color: 'black' }} />
+      </ListItem>
+    </List>
+  </div>
+</Drawer>
+
     </AppBar>
   );
 }
