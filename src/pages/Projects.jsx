@@ -17,11 +17,13 @@ function Projects() {
   return (
     <Grid2
       container
-      spacing={4}
+      spacing={2}
       sx={{
         display: "grid",
         gridTemplateColumns: { xs: "1fr", md: "repeat(3, 1fr)" },
         mt: "7.5%",
+        ml: "5%",
+        mr: "3%",
         alignItems: "stretch",
         rowGap: { xs: "130px" },
       }}
@@ -34,7 +36,7 @@ function Projects() {
             justifyContent: "space-between",
             maxWidth: 400,
             justifySelf: "center",
-            height: "120%",
+            height: "140%",
             backgroundColor: "black",
             color: "#E5E5CB",
             mb: { xs: 1, md: 0 },
@@ -77,7 +79,7 @@ function Projects() {
             flexDirection: "column",
             justifyContent: "space-between",
             maxWidth: 400,
-            height: "120%",
+            height: "140%",
             justifySelf: "center",
             backgroundColor: "black",
             color: "#E5E5CB",
@@ -123,7 +125,7 @@ function Projects() {
             flexDirection: "column",
             justifyContent: "space-between",
             maxWidth: 400,
-            height: "120%",
+            height: "140%",
             justifySelf: "center",
             backgroundColor: "black",
             color: "#E5E5CB",

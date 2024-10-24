@@ -20,7 +20,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/send", {
+      const response = await fetch("https://form-backend-portafolio.vercel.app/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -150,7 +150,7 @@ function Contact() {
             onChange={handleChange}
             fullWidth
             multiline
-            rows={4}
+            rows={8}
             required
             slotProps={{
               inputLabel: {
