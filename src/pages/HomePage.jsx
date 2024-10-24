@@ -87,7 +87,10 @@ function HomePage() {
         Explore Projects
       </StyledButton>
 
-      <Button component="a" to="../public/CV-S.Arellano.pdf"
+      <Button component="a" 
+  href="/CV-S.Arellano.pdf" 
+  target="_blank" 
+  rel="noopener noreferrer" 
   sx={{
     position: "absolute",
     top: "20px",
