@@ -19,14 +19,19 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    formData.message = `${formData.name} - ${formData.email}\n${formData.message}`;
+
     try {
-      const response = await fetch("https://form-backend-portafolio.vercel.app/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://form-backend-portafolio.vercel.app/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         alert("Email sent correctly");
@@ -59,13 +64,13 @@ function Contact() {
                 style: { color: "#E5E5CB" },
               },
               input: {
-                style: { color: "#E5E5CB", borderColor: "#E5E5CB"},
+                style: { color: "#E5E5CB", borderColor: "#E5E5CB" },
               },
             }}
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "#E5E5CB"// Borde blanco
+                  borderColor: "#E5E5CB", // Borde blanco
                 },
                 "&:hover fieldset": {
                   borderColor: "#E5E5CB", // Borde blanco al pasar el mouse
@@ -129,16 +134,16 @@ function Contact() {
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "#E5E5CB", 
+                  borderColor: "#E5E5CB",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#E5E5CB", 
+                  borderColor: "#E5E5CB",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "#E5E5CB", 
+                  borderColor: "#E5E5CB",
                 },
               },
-              backgroundColor: "black", 
+              backgroundColor: "black",
             }}
           />
         </Box>
@@ -163,24 +168,20 @@ function Contact() {
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "#E5E5CB", 
+                  borderColor: "#E5E5CB",
                 },
                 "&:hover fieldset": {
-                  borderColor: "#E5E5CB", 
+                  borderColor: "#E5E5CB",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "#E5E5CB", 
+                  borderColor: "#E5E5CB",
                 },
               },
-              backgroundColor: "black", 
+              backgroundColor: "black",
             }}
           />
         </Box>
-        <StyledButton
-          type="submit"
-        >
-          Send
-        </StyledButton>
+        <StyledButton type="submit">Send</StyledButton>
       </form>
     </Container>
   );

@@ -37,6 +37,7 @@ function Projects() {
             maxWidth: 400,
             justifySelf: "center",
             height: "140%",
+            pb: "20px",
             backgroundColor: "black",
             color: "#E5E5CB",
             mb: { xs: 1, md: 0 },
