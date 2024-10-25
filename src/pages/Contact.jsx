@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, TextField, Container, Typography } from "@mui/material";
+import { Box, TextField, Container, Typography, CircularProgress } from "@mui/material";
 import StyledButton from "../components/StyledButton";
 
 function Contact() {
@@ -9,6 +9,7 @@ function Contact() {
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false); // Nuevo estado para controlar la carga
 
   const handleChange = (e) => {
     setFormData({
@@ -20,6 +21,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     formData.message = `${formData.name} - ${formData.email}\n${formData.message}`;
+    setLoading(true); // Inicia la carga
 
     try {
       const response = await fetch(
@@ -41,8 +43,22 @@ function Contact() {
       }
     } catch (error) {
       console.error("Error:", error);
+    } finally {
+      setLoading(false); // Finaliza la carga independientemente del resultado
     }
   };
+
+  // Mostrar el spinner si está en modo de carga
+  if (loading) {
+    return (
+      <Container maxWidth="sm" style={{ textAlign: "center", marginTop: "50px" }}>
+        <CircularProgress sx={{ color: "#E5E5CB" }} />
+        <Typography variant="h6" style={{ marginTop: "16px" }}>
+          Waiting for confirmation...
+        </Typography>
+      </Container>
+    );
+  }
 
   return (
     <Container maxWidth="sm">

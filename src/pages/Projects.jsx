@@ -24,6 +24,7 @@ function Projects() {
         mt: "7.5%",
         ml: "5%",
         mr: "3%",
+        mb: "7%",
         alignItems: "stretch",
         rowGap: { xs: "190px" },
       }}

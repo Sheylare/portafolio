@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import profileImg from "../assets/images/bio-pic.jpeg";
 import React from "react";
 import { keyframes } from "@mui/system";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 // Definir la animación para la imagen
 const imageFadeIn = keyframes`
@@ -26,7 +27,7 @@ function About() {
         flexWrap: { xs: "wrap", md: "nowrap" },
       }}
     >
-      {/* Imagen de perfil con animación */}
+      
       <Box
         component="img"
         src={profileImg}
@@ -83,6 +84,31 @@ function About() {
           technical skills and a human-centered approach, let’s work together
           and create something impactful!
         </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: 5,
+          }}
+        >
+          <a
+            href="https://github.com/Sheylare"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ margin: "0 10px", color: "#E5E5CB" }}
+          >
+            <FaGithub size={30} />
+          </a>
+          <a
+            href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ margin: "0 10px", color: "#E5E5CB" }}
+          >
+            <FaLinkedin size={30} />
+          </a>
+        </Box>
+
       </Box>
     </Box>
   );
