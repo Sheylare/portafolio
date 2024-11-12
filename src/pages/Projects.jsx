@@ -149,8 +149,10 @@ function Projects() {
             </Typography>
           </CardContent>
           <CardActions>
-            <StyledButton>Learn More</StyledButton>
-            <StyledButton>View on GitHub</StyledButton>
+            <StyledButton  component={Link}
+              to="https://oxiserrano.netlify.app/contact">Learn More</StyledButton>
+            <StyledButton  component={Link}
+              to="https://github.com/Sheylare/oxiserrano">View on GitHub</StyledButton>
           </CardActions>
         </Card>
       </Grid2>
