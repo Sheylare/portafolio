@@ -11,8 +11,6 @@ import StyledButton from "../components/StyledButton";
 import { Link } from "react-router-dom";
 import { Grid2 } from "@mui/material";
 
-
-
 function Projects() {
   return (
     <Grid2
@@ -149,15 +147,21 @@ function Projects() {
             </Typography>
           </CardContent>
           <CardActions>
-            <StyledButton  component={Link}
-              to="https://oxiserrano.netlify.app/contact">Learn More</StyledButton>
-            <StyledButton  component={Link}
-              to="https://github.com/Sheylare/oxiserrano">View on GitHub</StyledButton>
+            <StyledButton
+              component={Link}
+              to="https://oxiserrano.netlify.app/"
+            >
+              Learn More
+            </StyledButton>
+            <StyledButton
+              component={Link}
+              to="https://github.com/Sheylare/oxiserrano"
+            >
+              View on GitHub
+            </StyledButton>
           </CardActions>
         </Card>
       </Grid2>
-
-      
     </Grid2>
   );
 }
